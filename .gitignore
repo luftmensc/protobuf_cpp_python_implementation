@@ -1,6 +1,6 @@
 # Build directories
 /build/
-/third_party
+/third_party/
 
 # CMake files
 CMakeFiles/
