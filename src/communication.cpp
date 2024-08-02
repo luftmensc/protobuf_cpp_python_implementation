@@ -9,9 +9,9 @@ using boost::asio::ip::tcp;
 void send_message(boost::asio::io_context& io_context, const std::string& server, const std::string& port) {
     // Create a Person object and populate it
     Person person;
-    person.set_name("John Doe");
-    person.set_id(1234);
-    person.set_email("johndoe@example.com");
+    person.set_name("Omer Faruk Okuyan");
+    person.set_id(34);
+    person.set_email("omerokuyan@taurob.com");
 
     // Serialize the object to a byte string
     std::string serialized_data;

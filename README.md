@@ -27,7 +27,11 @@ protobuf/
 
 1. **Run the setup script:**
 
-   ./setup.sh
+   ```./setup.sh```
+
+   after the installation, if you just want to build:
+
+   ```cd build && cmake .. && make```
 
 ## Running the Examples
 
@@ -35,21 +39,31 @@ protobuf/
 
 1. **Run the receiver:**
 
-   ./build/communication receiver
+   ```./build/communication receiver```
 
 2. **Run the sender:**
 
-   ./build/communication sender
+   ```./build/communication sender```
 
 ### Python Example
 
 1. **Run the receiver:**
 
-   python scripts/communication.py receiver
+   ```python scripts/communication.py receiver```
 
 2. **Run the sender:**
 
-   python scripts/communication.py sender
+   ```python scripts/communication.py sender```
+
+   **WARNING:** You need to run receiver before sender.
+
+   **USAGE TYPES:** 4 possibility for usage types:
+   - Receiver with python, sender with python
+   - Receiver with python, sender with c++
+   - Receiver with c++, sender with python
+   - Receiver with c++, sender with c++
+   
+   This ensures the cross compatibility of the Protobuf messages between C++ and Python.
 
 ## Dependencies
 
@@ -63,12 +77,14 @@ Ensure that you have installed the required dependencies and set up your environ
 
 1. **Clone the repository:**
 
-   git clone <repository_url>
+```
+   git clone https://github.com/luftmensc/protobuf_cpp_python_implementation.git
    cd protobuf_cpp_python_implementation
+```
 
 2. **Run the setup script:**
 
-   ./setup.sh
+   ```./setup.sh```
 
 3. **Run the examples as described in the README.
 

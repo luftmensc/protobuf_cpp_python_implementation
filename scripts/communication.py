@@ -6,9 +6,9 @@ from typing import Tuple
 async def send_message() -> None:
     # Create a Person object and populate it
     person = message_pb2.Person()
-    person.name = "John Doe"
-    person.id = 1234
-    person.email = "johndoe@example.com"
+    person.name = "Omer Faruk Okuyan"
+    person.id = 34
+    person.email = "omerokuyan@taurob.com"
 
     # Serialize the object to a byte string
     serialized_data = person.SerializeToString()
