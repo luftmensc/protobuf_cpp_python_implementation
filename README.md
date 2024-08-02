@@ -33,9 +33,10 @@ protobuf/
 
    ```./setup.sh```
 
-   after the installation, if you just want to build:
+   after the installation, if you made changes in cpp and just want to build:
 
    ```cd build && cmake .. && make```
+   
 
 ## Running the Examples
 
