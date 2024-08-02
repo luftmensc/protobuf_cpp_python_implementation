@@ -64,7 +64,7 @@ Ensure that you have installed the required dependencies and set up your environ
 1. **Clone the repository:**
 
    git clone <repository_url>
-   cd protobuf
+   cd protobuf_cpp_python_implementation
 
 2. **Run the setup script:**
 

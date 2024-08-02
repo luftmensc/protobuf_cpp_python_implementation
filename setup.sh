@@ -11,7 +11,6 @@ mkdir -p third_party
 if [ ! -d "third_party/protobuf-3.19.6" ]; then
     wget https://github.com/protocolbuffers/protobuf/releases/download/v3.19.6/protobuf-all-3.19.6.tar.gz -O third_party/protobuf-all-3.19.6.tar.gz
     tar -xzf third_party/protobuf-all-3.19.6.tar.gz -C third_party
-    mv third_party/protobuf-3.19.6/ third_party/protobuf-3.19.6
 fi
 
 # Build and install Protobuf
@@ -23,6 +22,13 @@ cd third_party/protobuf-3.19.6
 # Build and install using all available CPU cores
 make -j$NUM_CORES
 make install
+
+# Verify protoc installation
+if [ ! -f "install/bin/protoc" ]; then
+    echo "Error: protoc was not installed correctly."
+    exit 1
+fi
+
 cd ../..
 
 # Generate Protobuf files
