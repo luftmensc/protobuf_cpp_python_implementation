@@ -36,7 +36,7 @@ protobuf/
    after the installation, if you made changes in cpp and just want to build:
 
    ```cd build && cmake .. && make```
-   
+
 
 ## Running the Examples
 
@@ -91,5 +91,5 @@ Ensure that you have installed the required dependencies and set up your environ
 
    ```./setup.sh```
 
-3. **Run the examples as described in the README.
+3. **Run the examples as described in the Running the Examples section.**
 
