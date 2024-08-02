@@ -4,6 +4,7 @@ This project demonstrates how to use Protocol Buffers with C++ and Python. It in
 
 ## Directory Structure
 
+```plaintext
 protobuf/
 |-- build/
 |-- include/
@@ -22,6 +23,7 @@ protobuf/
 |-- README.md
 |-- setup.sh
 |-- .gitignore
+```
 
 ## Setup and Build
 
