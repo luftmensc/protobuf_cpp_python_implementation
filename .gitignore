@@ -1,0 +1,56 @@
+# Build directories
+/build/
+/third_party/protobuf-3.19.6/
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Generated Protobuf files
+/src/message.pb.cc
+/include/message.pb.h
+/python/message_pb2.py
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.so
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Miscellaneous
+*.out
+*.a
+*.o
+*.obj
+*.d
+*.lib
+*.dll
+*.exe
+*.so
+*.dylib
+*.pdb
+*.app
+*.ipa
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
