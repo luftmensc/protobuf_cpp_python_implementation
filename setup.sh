@@ -11,6 +11,7 @@ mkdir -p third_party
 if [ ! -d "third_party/protobuf-3.19.6" ]; then
     wget https://github.com/protocolbuffers/protobuf/releases/download/v3.19.6/protobuf-all-3.19.6.tar.gz -O third_party/protobuf-all-3.19.6.tar.gz
     tar -xzf third_party/protobuf-all-3.19.6.tar.gz -C third_party
+    rm third_party/protobuf-all-3.19.6.tar.gz
 fi
 
 # Build and install Protobuf
