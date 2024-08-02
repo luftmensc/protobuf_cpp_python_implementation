@@ -2,6 +2,8 @@
 
 This project demonstrates how to use Protocol Buffers with C++ and Python. It includes examples for both sending and receiving Protobuf messages using Boost.Asio and asyncio.
 
+**TESTED WITH CLEAN CLONE AND BUILD WITH ./setup.sh**
+
 ## Directory Structure
 
 ```plaintext
