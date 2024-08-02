@@ -1,6 +1,6 @@
 # Build directories
 /build/
-/third_party/protobuf-3.19.6/
+/third_party
 
 # CMake files
 CMakeFiles/
