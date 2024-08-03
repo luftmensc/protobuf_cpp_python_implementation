@@ -47,6 +47,8 @@ protobuf/
 
 1. **Run the setup script:**
 
+   It takes around 2-3 minutes to download and build the Protobuf library.
+
    ```./setup.sh```
 
    after the installation, if you made changes in cpp and just want to build:
