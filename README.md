@@ -4,23 +4,39 @@ This project demonstrates how to use Protocol Buffers with C++ and Python. It in
 
 **TESTED WITH CLEAN CLONE AND BUILD WITH ./setup.sh**
 
+## Cloning and Setting Up the Repository
+
+1. **Clone the repository:**
+
+```
+   git clone https://github.com/luftmensc/protobuf_cpp_python_implementation.git
+   cd protobuf_cpp_python_implementation
+```
+
+2. **Run the setup script:**
+
+   ```./setup.sh```
+
+3. **Run the examples as described in the Running the Examples section.**
+
 ## Directory Structure
 
 ```plaintext
 protobuf/
 |-- build/
-|-- include/
-|   |-- message.pb.h
 |-- proto/
 |   |-- message.proto
 |-- src/
 |   |-- communication.cpp
 |   |-- message.pb.cc
+    |-- message.pb.h
 |-- scripts/
 |   |-- communication.py
 |   |-- message_pb2.py
 |-- third_party/
 |   |-- (Protobuf source will be downloaded here)
+|-- tests/
+    |-- test.cpp
 |-- CMakeLists.txt
 |-- README.md
 |-- setup.sh
@@ -39,6 +55,17 @@ protobuf/
 
 
 ## Running the Examples
+
+### Test Example
+
+1. **Run the test:**
+
+   ```./build/test_protobuf```
+
+This test sends and receives a Protobuf message using C++ with Boost.Asio and threads. It creates two threads: one for sending and one for receiving. The sender thread sends data every 1 microsecond (1 MHz) for 10 seconds. The receiver thread receives the data and prints the received Person struct's ID.
+
+To pass the test, the sender count must be equal to the receiver count, which is displayed at the end of the test and printed to the console.
+
 
 ### C++ Example
 
@@ -78,18 +105,5 @@ protobuf/
 
 Ensure that you have installed the required dependencies and set up your environment correctly.
 
-### Cloning and Setting Up the Repository
 
-1. **Clone the repository:**
-
-```
-   git clone https://github.com/luftmensc/protobuf_cpp_python_implementation.git
-   cd protobuf_cpp_python_implementation
-```
-
-2. **Run the setup script:**
-
-   ```./setup.sh```
-
-3. **Run the examples as described in the Running the Examples section.**
 

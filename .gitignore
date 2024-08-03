@@ -12,8 +12,7 @@ Makefile
 
 # Generated Protobuf files
 /src/message.pb.cc
-/include/message.pb.h
-/python/message_pb2.py
+/scripts/message_pb2.py
 
 # Logs and temporary files
 *.log

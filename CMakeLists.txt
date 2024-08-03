@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Include Protobuf
 add_subdirectory(third_party/protobuf-3.19.6/cmake)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
 include_directories(${protobuf_SOURCE_DIR}/src)
 include_directories(${protobuf_BINARY_DIR})
 
@@ -21,6 +21,18 @@ add_executable(communication
 )
 
 target_link_libraries(communication
+    protobuf::libprotobuf
+    ${Boost_LIBRARIES}
+    pthread
+)
+
+# Add test executable
+add_executable(test_protobuf
+    tests/test.cpp
+    src/message.pb.cc
+)
+
+target_link_libraries(test_protobuf
     protobuf::libprotobuf
     ${Boost_LIBRARIES}
     pthread
